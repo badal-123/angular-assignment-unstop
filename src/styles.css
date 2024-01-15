@@ -1,0 +1,24 @@
+/* Add application styles & imports to this file! */
+/* Add styles for available and booked seats */
+.seats {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.seats div {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.available {
+  background-color: #8eff8e; /* Green for available */
+}
+
+.booked {
+  background-color: #ff8e8e; /* Red for booked */
+}

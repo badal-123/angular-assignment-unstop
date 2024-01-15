@@ -1,0 +1,9 @@
+<!-- src/app/app.component.html -->
+
+<button (click)="reserveSeats(4)">Reserve 4 Seats</button>
+
+<div class="seats">
+  <div *ngFor="let seat of seatStatus; let i = index" [ngClass]="{'available': seat === 0, 'booked': seat === 1}">
+    {{ i + 1 }}
+  </div>
+</div>
